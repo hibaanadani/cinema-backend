@@ -2,7 +2,7 @@
 require("../connections/connection.php");
 
 
-$query = "CREATE TABLE users_db (
+$query = "CREATE TABLE users (
     user_id INTEGER PRIMARY KEY AUTO_INCREMENT,
     firstname TEXT NOT NULL,
     lastname TEXT NOT NULL,

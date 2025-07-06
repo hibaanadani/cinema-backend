@@ -2,7 +2,7 @@
 require("../connection/connection.php");
 
 
-$query = "CREATE TABLE bookings_db (
+$query = "CREATE TABLE bookings (
         booking_id INT AUTO_INCREMENT PRIMARY KEY,
         user_id INT NOT NULL,
         showtime_id INT NOT NULL,

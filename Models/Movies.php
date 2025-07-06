@@ -8,6 +8,7 @@ class Movies extends Model{
     private string $trailer;
     private string $title; 
     private string $movie_description; 
+    private string $actros;
     private float $rating;
     
     protected static string $table = "movies";
@@ -18,6 +19,7 @@ class Movies extends Model{
         $this->trailer = $data["trailer"];
         $this->title = $data["title"];
         $this->movie_description = $data["movie_description"];
+        $this->actors = $data["actors"];
         $this->rating = $data["rating"];
     }
 
@@ -45,6 +47,10 @@ class Movies extends Model{
         return $this->rating;
     }
 
+    public function getActors(): string {
+        return $this->actors;
+    }
+
     public function setTitle(string $title){
         $this->title = $title;
     }
@@ -65,8 +71,12 @@ class Movies extends Model{
         $this->rating = $rating;
     }
 
+    public function setActors(float $actors){
+        $this->actors = $actors;
+    }
+
     public function toArray(){
-        return [$this->id, $this->title, $this->rating, $this->description];
+        return [$this->id, $this->poster, $this->trailer ,$this->title, $this->description, $this->rating, $this-> actors];
     }
     
 }

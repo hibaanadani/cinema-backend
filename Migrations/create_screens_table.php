@@ -2,7 +2,7 @@
 require("../connection/connection.php");
 
 
-$query = "CREATE TABLE screens_db (
+$query = "CREATE TABLE screens (
     screen_id INT AUTO_INCREMENT PRIMARY KEY,
     screen_number INT NOT NULL,
     capacity INT NOT NULL 

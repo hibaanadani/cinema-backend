@@ -2,7 +2,7 @@
 require("../connection/connection.php");
 
 
-$query = "CREATE TABLE seats_db(
+$query = "CREATE TABLE seats(
     seat_id INT AUTO_INCREMENT PRIMARY KEY,
     screen_id INT NOT NULL,
     seat_row VARCHAR(1) NOT NULL, -- e.g., 'A', 'B', 'C'

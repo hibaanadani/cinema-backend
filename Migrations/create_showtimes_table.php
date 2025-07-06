@@ -2,7 +2,7 @@
 require("../connection/connection.php");
 
 
-$query ="CREATE TABLE showtimes_db (
+$query ="CREATE TABLE showtimes(
         showtime_id INT AUTO_INCREMENT PRIMARY KEY,
         movie_id INT NOT NULL,
         screen_id INT NOT NULL,
